@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <title>COMPRE 1</title>
+    <style>
+        body {
+            background-image: url("imagens/SOBRE II.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 150vh;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar-custom {
+            background-color: white;
+            border-radius: 0 0 35px 35px;
+        }
+        .nav-item:hover {
+            transition: background-color 0.3s ease; /* Suaviza a transição de cor */
+            background-color: #FA0202;
+            border-radius: 20px;
+        }
+        .nav-link:hover {
+            color: white;
+        }
+        .btn-custom {
+            background-color: #FA0202;
+            border: none;
+            border-radius: 20px;
+            width: 100px; /* Ajuste a largura conforme necessário */
+            height: 40px; /* Ajuste a altura conforme necessário */
+            margin-top: auto;
+            margin-bottom: auto;
+            transition: background-color 0.3s ease; /* Suaviza a transição de cor */
+        }
+        .btn-custom img {
+            width: 25px;
+            height: auto;
+            margin-top: 4px;
+        }
+        .btn-custom:hover {
+            background-color: #434B83;
+        }
+        
+        #conteinerUl ul{
+            list-style: none;
+            margin-left: auto; /* Move a lista para a direita */
+            margin-right: -9%; /* Remove o espaçamento à direita */
+            padding-left: 0; /* Remove o padding padrão */
+            display: flex; /* Utiliza flexbox para alinhar os itens */
+            flex-direction: column; /* Alinha os itens um abaixo do outro */
+            align-items: flex-end; /* Alinha os itens à direita */
+        }
+        #conteinerUl ul li img {
+            opacity: 0.5; /* Define a opacidade das imagens para 50% */
+        }
+        .card{
+            background-color: #315B95;
+            color: white;
+            border-radius: 20px;
+            overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas arredondadas */
+            text-align: center;
+        }
+        #cards{
+            margin-top: -70%;
+        }
+        .card-img-top {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 20px; /* Ajusta o arredondamento das bordas superiores */
+            border-top-right-radius: 20px; /* Ajusta o arredondamento das bordas superiores */
+        }
+        .card-body .btn {
+            width: 200px; /* Novo tamanho da largura do botão */
+            font-size: 18px; /* Aumenta o tamanho da fonte do texto do botão */
+            border-radius: 20px;
+            background-color:#C1F47A ;
+            color: #315B95;
+            font-weight: bold;
+        }
+        .cardCompra {
+            position: absolute;
+            right: 0;
+            top: 78%;
+            transform: translateY(-50%);
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 30px 0 0 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: 1000;
+            width: 50rem;
+            height: 135%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .cardCompra .card-body {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .cardCompra .card-body h2 {
+            font-size: 20px;
+        }
+        .cardCompra ul {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+        .cardCompra ul li {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        .cardCompra .card-body h4 {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .cardCompra .card-body h2,
+        .cardCompra .card-body h4 {
+            margin: 0;
+        }
+        #ImgCompre1{
+            background-color: #315B95;
+            width: 800px;
+            height: 200px;
+        }
+        #ImgCompre1 img{
+            width: 20%;
+        }
+        #ImgCompre3{
+            background-color: #7F7979;
+            margin-top: 15%;
+            width: 445px;
+            height: 200px;
+            border-radius: 30px;
+            margin-inline-start: 25%;
+        }
+        
+        #ImgCompre3 img{
+            width: 30%;
+            margin-right: 2.5%;
+            margin-top: 3%;
+
+        }
+        #compraFinalizar{
+            background-color: #315B95;
+            width: 800px;
+            height: 300px;
+            color: white;
+            padding-top: 2%;
+        }
+        .form-control:focus {
+    border-color: #ced4da; /* Cor padrão de borda do Bootstrap */
+    box-shadow: none; /* Remove qualquer sombra ao redor do input */
+        }
+        .btn:hover{
+            background-color: black;
+            color: white;
+
+        }
+        .btn-success:hover {
+            background-color: black !important;
+            color: white !important;
+        }
+        .footer-menu {
+            background-color: white;
+            border-radius: 35px 35px 0 0;
+            margin-top: 33%; /* Espaço acima do footer */
+        }
+        #btnFooter {
+            width: 250px; /* Ajuste a largura conforme necessário */
+            height: 40px; /* Ajuste a altura conforme necessário */
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        span {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="imagens/logo.png" alt="Logo" width="60" height="56">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">SOBRE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">CONTATO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comprarAgora.html">COMPRAR AGORA</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <a class="navbar-brand" href="#">
+                        <img src="imagens/cabecalho.png" alt="Logo" width="60" height="56">
+                    </a>
+                    <button class="btn btn-custom mx-1">
+                        <img src="imagens/lupa branca.png" alt="Search">
+                    </button>
+                    <button class="btn btn-custom mx-1">
+                        <img src="imagens/login branco.png" alt="Login">
+                    </button>
+                    <button class="btn btn-custom mx-1">
+                        <img src="imagens/carrinho branco.png" alt="Cart">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="conteinerUl">
+            <ul>
+                <li><img src="imagens/cabecalho.png" alt="" width="96" height="92"></li>
+                <li><img src="imagens/cabecalho.png" alt="" width="96" height="92"></li>
+                <li><img src="imagens/cabecalho.png" alt="" width="96" height="92"></li>
+                <li><img src="imagens/cabecalho.png" alt="" width="96" height="92"></li>
+                <li><img src="imagens/cabecalho.png" alt="" width="96" height="92"></li>
+                <li><img src="imagens/cabecalho.png" alt="" width="96" height="92"></li>
+                <li><img src="imagens/cabecalho.png" alt="" width="96" height="92"></li>
+                <li><img src="imagens/cabecalho.png" alt="" width="96" height="92"></li>
+                <li><img src="imagens/cabecalho.png" alt="" width="96" height="92"></li>
+                <li><img src="imagens/cabecalho.png" alt="" width="96" height="92"></li>
+                <li><img src="imagens/cabecalho.png" alt="" width="96" height="92"></li>
+            </ul>
+        </div>
+        <div id="conteinerCards">
+            <div class="row justify-content-center" id="cards">
+                <div class="card m-3" style="width: 25rem;">
+                    <img src="/imagens/leve 1 editado.png" class="card-img-top" alt="..." >
+                    <div class="card-body" id="itensCard">
+                        <h3 class="card-title">LEVE 1 POR APENAS</h3>
+                        <h2>R$120,00</h2>
+                        <button type="button" class="btn btn-success">COMPRAR AGORA</button>
+                    </div>
+                    <div class="card-body">
+                    </div>
+                </div>
+                <div class="card m-3" style="width: 25rem;">
+                    <img src="/imagens/leve 3 pague 2 editado.png" class="card-img-top" alt="...">
+                    <div class="card-body" id="itensCard">
+                        <h3 class="card-title">LEVE 3 e PAGUE 2</h3>
+                        <h2>R$240,00</h2>
+                        <button type="button" class="btn">COMPRAR AGORA</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cardCompra">
+            <ul>
+                <li style="border: none;"><h2>CARRINHO</h2></li>
+                <li style="border: none;"><a href="comprarAgora.html" style="font-size: 28px;text-decoration: none; color: inherit;">X</a></li>
+            </ul>
+            <h4 class="card-text">1 Item</h4>
+            <div id="ImgCompre1">
+                <img src="/imagens/1_POTE-removebg-preview.png" class="card-img-top" alt="...">
+                <div style="text-align: left; margin-top: -20%; margin-left: 18%; color: white;">
+                    <h5>GUMMY CREATINA MORANGO - 180G</h5>
+                    <h6>1 MÊS</h6>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-left: 18%; margin-right: 5%;">
+                    <button type="button" class="btn btn-light  btn-lg"> +  1  -</button>
+                    <h2 style="color: white;">R$120,00</h2>
+                </div>
+                <div id="ImgCompre3">
+                    <img src="/imagens/1_POTE-removebg-preview.png"  alt="...">
+                    <img src="/imagens/1_POTE-removebg-preview.png"  alt="...">
+                    <img src="/imagens/1_POTE-removebg-preview.png"  alt="...">
+                </div>
+                <div style="text-align: center; margin-right: -5%;">
+                    <h2>LEVE 3 PELO PREÇO DE 2</h2>
+                </div>
+                <div style="text-align: center;">
+                    <a href="comprarAgoraLeve3.html">
+                        <button type="button" class="btn btn-success" style="margin-right: -10%; border-radius: 20px; background-color: #C1F47A; color: #315B95; width: 150px; font-weight:bold; font-size: 18px;">APROVEITE</button>
+                    </a>
+                </div>
+                <ul>
+                    <li style="border: none;"><h4>SUBTOTAL</h4></li>
+                    <li style="border: none;"><h4>R$ 120,00</h4></li>
+                </ul>
+                <div id="compraFinalizar">
+                    <div id="Finalizar">
+                    <h4>DESCONTO:</h4>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Digite o cupom de Desconto" aria-describedby="button-addon2">
+                        <button class="btn btn-success" type="button" id="button-addon2" style="background-color: #C1F47A; color: #315B95; width: 150px; font-weight:bold; font-size: 20px;">APLICAR</button>
+                      </div>
+                      <h4>FRETE:</h4>
+                      <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Digite o seu Cep" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-success" type="button" id="button-addon2" style="background-color: #C1F47A; color: #315B95; width: 150px; font-weight:bold; font-size: 20px;">APLICAR</button>
+                      </div>
+                      <ul>
+                        <li style="border: none;"><h2>TOTAL</h2></li>
+                        <li style="border: none;"><h2>R$ 120,00</h2></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="comprarAgora.html">
+                <button type="button" class="btn btn-outline-dark" style="width: 800px; margin-top: 8%; font-size: 30px;">CONTINUAR COMPRANDO</button>
+            </a>
+           
+            <button type="button" class="btn btn-success" style="width: 800px; margin-top: 8%; font-size: 30px; background-color: #C1F47A; color: #434B83; font-weight: bold; border-radius: 0 0 0 35px;">FINALIZAR PEDIDO</button>
+
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    <div class="footer-menu navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid justify-content-around">
+            <button class="btn btn-custom mx-2 d-flex align-items-center" id="btnFooter">
+                <img src="imagens/instagram branco.png" alt="Instagram">
+                <span class="ms-2">@lifegummy</span>
+            </button>
+            <button class="btn btn-custom mx-2 d-flex align-items-center" id="btnFooter">
+                <img src="imagens/phone branco.png" alt="Telefone">
+                <span class="ms-2">(47) 123456789</span>
+            </button>
+            <button class="btn btn-custom mx-2 d-flex align-items-center" id="btnFooter">
+                <img src="imagens/pergunta branco.png" alt="Dúvidas">
+                <span class="ms-2">Perguntas Frequentes</span>
+            </button>
+            <button class="btn btn-custom mx-2 d-flex align-items-center" id="btnFooter">
+                <img src="imagens/chat branco.png" alt="Chat">
+                <span class="ms-2">Fale Conosco</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
