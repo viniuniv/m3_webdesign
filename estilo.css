@@ -1,0 +1,29 @@
+.btn-nav-direita{
+    border-radius:30px;
+    margin-right:15px;
+    width: 70px
+}
+.conteudo-central{
+    border-radius:50px;
+    background-color: #434b83;
+    margin-top:30px;
+    padding-top:30px;
+    color:white;
+    text-align:center;
+}
+
+.conteudo-central p{
+    font-size:x-large
+}
+.conteudo-central div img{
+    height:200px;
+    margin-top:30px
+}
+
+
+#rodape ul li button{
+    background-color:red;
+    color:white;
+    margin-right: 5em;
+    border-radius: 30px;
+}
